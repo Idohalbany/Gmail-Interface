@@ -1,0 +1,58 @@
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  transition: 1s all ease;
+}
+.takeoff {
+  background: none;
+}
+
+.middle {
+  position: absolute;
+  top: 63px;
+  left: 260px;
+  right: 53px;
+}
+
+@media screen and (max-width: 850px) {
+  .middle {
+    left: 230px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .middle {
+    right: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .middle {
+    left: 200px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .middle {
+    left: 0;
+    top: 0;
+  }
+
+  .Hide-app .middle {
+    position: fixed;
+    z-index: 3;
+  }
+}
